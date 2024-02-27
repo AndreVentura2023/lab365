@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Estudos de JavaScript</title>
+</head>
+<body>
+    <script>
+        // Declara a variável
+let numero;
+
+// Atribui um valor à variável usando window.prompt()
+numero = window.prompt("Por favor, insira um número");
+
+// Exibe o valor da variável na janela do navegador
+alert(numero);
+    </script>
+</body>
+</html>
