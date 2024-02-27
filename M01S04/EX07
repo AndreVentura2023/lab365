@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Estudos de JavaScript</title>
+</head>
+<body>
+    <script>
+// Função para exibir saudação de acordo com a hora
+function saudacao(hora) {
+  // Verifica se a hora está entre 0 e 12
+  if (hora >= 0 && hora < 12) {
+    console.log("Bom dia!");
+  } else if (hora >= 12 && hora < 18) {
+    console.log("Boa tarde!");
+  } else {
+    console.log("Boa noite!");
+  }
+}
+
+// Exemplos de uso da função
+saudacao(10); // Exibe "Bom dia!"
+saudacao(14); // Exibe "Boa tarde!"
+saudacao(20); // Exibe "Boa noite!"
+
+</script>
+</body>
+</html>
