@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Estudos de javascript</title>
+</head>
+<body>
+    <script>
+        function verificarMaiorIdade() {
+  // Solicita a idade do usuário
+  const idade = prompt("Digite sua idade:");
+
+  // Verifica se a idade é um número válido
+  if (isNaN(idade)) {
+    console.log("Idade inválida!");
+    return;
+  }
+
+  // Converte a idade para um número inteiro
+  const idadeNumero = parseInt(idade);
+
+  // Verifica se o usuário é maior de idade
+  if (idadeNumero >= 18) {
+    console.log("Você é maior de idade!");
+  } else {
+    console.log("Você é menor de idade!");
+  }
+}
+
+// Executa a função
+verificarMaiorIdade();
+
+    </script>
+    
+</body>
+</html>
