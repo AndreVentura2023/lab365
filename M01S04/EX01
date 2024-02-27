@@ -6,7 +6,7 @@
 <body>
     <script>
         function exibirMensagem() {
-            console.log("Iniciando meus estudos em JavaScript");
+            console.log("Testando integração com GITHUB");
         }
         exibirMensagem();
     </script>
