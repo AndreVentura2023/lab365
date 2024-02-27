@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Estudos de JavaScript</title>
+</head>
+<body>
+    <script>
+    function parOuImpar(numero) {
+        // Verifica se o resto da divisão por 2 é igual a 0
+        if (numero % 2 === 0) {
+          return "Par";
+        } else {
+          return "Ímpar";
+        }
+      }
+      
+      // Exemplos de uso da função
+      console.log(parOuImpar(10)); // Exibe "Par"
+      console.log(parOuImpar(7)); // Exibe "Ímpar"
+      </script>
+    
+</body>
+</html>
