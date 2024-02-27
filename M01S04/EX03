@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+// Usando o operador de concatenação
+var string1 = "Olá, ";
+var string2 = "mundo!";
+var resultado = string1 + string2;
+console.log(resultado);  // Saída: "Olá, mundo!"
+
+// Usando template strings
+var string1 = "Olá, ";
+var string2 = "mundo!";
+var resultado = `${string1}${string2}`;
+console.log(resultado);  // Saída: "Olá, mundo!"
+</script>
+
+</body>
+</html>
