@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Estudos de JavaScript</title>
+</head>
+<body>
+    <script>
+        function exibirMensagem() {
+            console.log("Iniciando meus estudos em JavaScript");
+        }
+        exibirMensagem();
+    </script>
+</body>
+</html>
