@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Estudos de javascript</title>
+</head>
+<body>
+    <script>
+        const diaDaSemana = "Segunda-feira";
+
+switch (diaDaSemana) {
+  case "Segunda-feira":
+    console.log("Comece a semana com energia!");
+    break;
+  case "Terça-feira":
+    console.log("Quase na metade da semana!");
+    break;
+  case "Quarta-feira":
+    console.log("É hump day!");
+    break;
+  case "Quinta-feira":
+    console.log("Só mais um dia para o fim de semana!");
+    break;
+  case "Sexta-feira":
+    console.log("Uhu! Fim de semana chegou!");
+    break;
+  default:
+    console.log("Dia inválido!");
+}
+
+    </script>
+    
+</body>
+</html>
