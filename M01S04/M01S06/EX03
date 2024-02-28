@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil do Usuário</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Cabeçalho -->
+  <header>
+    <nav>
+      <h1>Perfil do Usuário</h1>
+    </nav>
+  </header>
+
+  <!-- Conteúdo Principal -->
+  <main>
+    <!-- Informações do Usuário -->
+    <article class="informacoes-usuario">
+      <img src="foto-usuario.jpg" alt="Foto do Usuário" class="foto-usuario">
+      <h2>Nome do Usuário</h2>
+      <p>Descrição do Usuário</p>
+    </article>
+
+    <!-- Detalhes do Usuário -->
+    <aside class="detalhes-usuario">
+      <p>Email: <a href="mailto:usuario@email.com">usuario@email.com</a></p>
+      <p>Telefone: (11) 1234-5678</p>
+    </aside>
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>Copyright © 2024</p>
+  </footer>
+</body>
+</html>
