@@ -1,0 +1,30 @@
+/* Cabeçalho */
+
+header {
+  background-color: #2D5377;
+  color: #FFF;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Conteúdo principal */
+
+main {
+  background-color: #FFF;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+/* Rodapé */
+
+footer {
+  background-color: #2D5377;
+  color: #FFF;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  text-align: center;
+  padding: 10px;
+}
