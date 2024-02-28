@@ -1,0 +1,17 @@
+// Função de boas-vindas com parâmetro padrão
+function boasVindas(nome = "Usuário") {
+  console.log(`Olá, ${nome}! Bem-vindo ao nosso site.`);
+}
+
+// Chamada da função com nome personalizado
+boasVindas("João");
+
+// Loop com for-of para iterar um array
+const nomes = ["Ana", "Maria", "Pedro"];
+for (const nome of nomes) {
+  console.log(`Olá, ${nome}!`);
+}
+
+// Operador ternário para condicional
+const saudacao = nomePadrao === "Usuário" ? "Nome de usuário padrão." : "Nome de usuário personalizado.";
+console.log(saudacao);
