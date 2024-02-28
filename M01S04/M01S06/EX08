@@ -1,0 +1,17 @@
+(function() {
+  // Função para atualizar o nome do usuário
+  function atualizarNome(novoNome) {
+    // Verifica se o elemento que contém o nome do usuário existe
+    const nomeUsuarioElement = document.getElementById("nome-usuario");
+    
+    if (nomeUsuarioElement) {
+      // Atualiza o conteúdo do elemento com o novo nome
+      nomeUsuarioElement.textContent = novoNome;
+    } else {
+      console.error("Elemento '#nome-usuario' não encontrado.");
+    }
+  }
+
+  // Chamada da função para atualizar o nome do usuário
+  atualizarNome("João Silva");
+})();
