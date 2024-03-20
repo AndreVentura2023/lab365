@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div style="text-align: center;">
+    <h2>Temporizador Simples</h2>
+
+    <button id="startButton" class="btn">Iniciar Temporizador</button>
+    <button id="stopButton" class="btn">Parar Temporizador</button>
+
+    <p id="timer">0</p>
+</div>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+h2 {
+    color: #333;
+}
+
+.btn {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+#startButton {
+    background-color: #4CAF50;
+}
+
+#stopButton {
+    background-color: #f44336;
+}
+
+#startButton:active {
+    background-color: #45a049;
+}
+
+#stopButton:active {
+    background-color: #d32f2f;
+}
+
+#timer {
+    font-size: 2em;
+    color: #333;
+    margin-top: 20px; /* Adiciona espaço acima do contador */
+}
+</style>
+
+<script>
+let count = 0;
+let timerId = null;
+
+document.getElementById('startButton').addEventListener('click', startTimer);
+document.getElementById('stopButton').addEventListener('click', stopTimer);
+
+function startTimer() {
+    if(timerId) return;
+
+    timerId = setInterval(() => {
+        count++;
+        document.getElementById('timer').textContent = count;
+        if(count === 20) {
+            alert('PARABÉNS, VOCÊ VENCEU!');
+            stopTimer();
+        }
+    }, 1000);
+}
+
+function stopTimer() {
+    clearInterval(timerId);
+    timerId = null;
+}
+</script>
+
+</body>
+</html>
