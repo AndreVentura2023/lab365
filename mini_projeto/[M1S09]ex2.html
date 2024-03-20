@@ -69,6 +69,8 @@ function startTimer() {
         if(count === 20) {
             alert('PARABÉNS, VOCÊ VENCEU!');
             stopTimer();
+            count = 0; // Zera o contador
+            document.getElementById('timer').textContent = count; // Atualiza o contador na tela
         }
     }, 1000);
 }
