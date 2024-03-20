@@ -4,8 +4,8 @@
 
 <h2>Temporizador Simples</h2>
 
-<button onclick="startTimer()">Iniciar Temporizador</button>
-<button onclick="stopTimer()">Parar Temporizador</button>
+<button id="startButton">Iniciar Temporizador</button>
+<button id="stopButton">Parar Temporizador</button>
 
 <p id="timer">0</p>
 
@@ -13,15 +13,22 @@
 let count = 0;
 let timerId = null;
 
+document.getElementById('startButton').addEventListener('click', startTimer);
+document.getElementById('stopButton').addEventListener('click', stopTimer);
+
 function startTimer() {
+    // Verifica se um temporizador já está em execução
+    if(timerId) return;
+
     timerId = setInterval(() => {
         count++;
-        document.getElementById('timer').innerHTML = count;
+        document.getElementById('timer').textContent = count;
     }, 1000);
 }
 
 function stopTimer() {
     clearInterval(timerId);
+    timerId = null; // Reseta o timerId para permitir que o temporizador seja iniciado novamente
 }
 </script>
 
